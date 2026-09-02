@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface BookRepository {
+public interface IBookRepository {
     Book save(Book book);
     Optional<Book> findById(UUID id);
     Optional<Book> findByGoogleBooksId(String googleBooksId);

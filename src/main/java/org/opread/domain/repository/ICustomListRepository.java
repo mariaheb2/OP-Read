@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface CustomListRepository {
+public interface ICustomListRepository {
     CustomList save(CustomList customList);
     Optional<CustomList> findById(UUID id);
     List<CustomList> findByUserId(UUID userId);
