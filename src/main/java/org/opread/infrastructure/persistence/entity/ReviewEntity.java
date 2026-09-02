@@ -31,13 +31,13 @@ import java.util.UUID;
 public class ReviewEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
     @Column(nullable = false)
     private Integer rating;
 
-    @Column(columnDefinition = "Coments")
+    @Column(columnDefinition = "TEXT")
     private String comment;
 
     @Column(name = "created_at", nullable = false, updatable = false)

@@ -4,10 +4,12 @@ import org.opread.domain.model.User;
 import org.opread.domain.repository.IUserRepository;
 import org.opread.infrastructure.persistence.mapper.UserMapper;
 import org.opread.infrastructure.persistence.repository.ISpringDataUserRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 import java.util.UUID;
 
+@Component
 public class UserRepositoryImpl implements IUserRepository {
     private final ISpringDataUserRepository springDataUserRepository;
     public UserRepositoryImpl(ISpringDataUserRepository springDataUserRepository) {
