@@ -7,6 +7,6 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface ISpringDataReviewRepository extends JpaRepository<ReviewEntity, UUID> {
-    Optional<ReviewEntity> findByBookId(String bookId);
-    Optional<ReviewEntity> findByUserId(String userId);
+    Optional<ReviewEntity> findByBookId(UUID bookId);
+    Optional<ReviewEntity> findByUserId(UUID userId);
 }
