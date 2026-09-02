@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface ReviewRepository {
+public interface IReviewRepository {
     Review save(Review review);
     Optional<Review> findById(UUID id);
     List<Review> findByBookId(UUID bookId);

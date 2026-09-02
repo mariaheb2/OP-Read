@@ -19,9 +19,9 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAt;
     private Role role;
-    private Set<Book> favoriteBooks = new HashSet<>();
+    private Set<Book> favoriteBooks;
 
     public User() {
         this.role = Role.USER;

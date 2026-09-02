@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.opread.domain.exception.InvalidRatingException;
 
-import java.security.Timestamp;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Getter
@@ -17,7 +17,7 @@ public class Review {
     private UUID id;
     private Integer rating;
     private String comment;
-    private Timestamp createdAt;
+    private LocalDateTime createdAt;
     private Book bookId;
     private User userId;
 
