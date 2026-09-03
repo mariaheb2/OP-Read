@@ -46,6 +46,9 @@ public class BookEntity {
 
     private String author;
 
+    @Column(columnDefinition = "TEXT")
+    private String description;
+
     @Column(name = "cover_url")
     private String coverUrl;
 

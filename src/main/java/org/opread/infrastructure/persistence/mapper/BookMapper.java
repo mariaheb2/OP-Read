@@ -13,6 +13,7 @@ public class BookMapper {
                 entity.getGoogleBooksId(),
                 entity.getTitle(),
                 entity.getAuthor(),
+                entity.getDescription(),
                 entity.getCoverUrl(),
                 entity.getTags()
         );
@@ -26,6 +27,7 @@ public class BookMapper {
                 .googleBooksId(domain.getGoogleBooksId())
                 .title(domain.getTitle())
                 .author(domain.getAuthor())
+                .description(domain.getDescription())
                 .coverUrl(domain.getCover_url())
                 .tags(domain.getTag())
                 .build();
