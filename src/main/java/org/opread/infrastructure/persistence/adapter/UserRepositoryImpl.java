@@ -46,4 +46,9 @@ public class UserRepositoryImpl implements IUserRepository {
     public void deleteById(UUID id) {
         springDataUserRepository.deleteById(id);
     }
+
+    @Override
+    public Optional<User> findByName(String username) {
+        return springDataUserRepository.findByName(username).map(UserMapper::toDomain);
+    }
 }

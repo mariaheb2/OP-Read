@@ -17,6 +17,7 @@ public class Book {
     private String googleBooksId;
     private String title;
     private String author;
+    private String description;
     private String cover_url;
     private Set<Tags> tag;
 
